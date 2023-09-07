@@ -1,0 +1,52 @@
+.opinion-slider-block {
+    &__slide {
+        &-content {
+            padding: 64px;
+        }
+
+        &-description {
+            margin-bottom: 24px;
+            font-weight: 500;
+            font-size: 16px;
+            color: #232629;
+        }
+
+        &-name {
+            color: #0860C4;
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: unset;
+        }
+
+        &-position {
+            font-size: 16px;
+            font-weight: 400;
+            color: #3B3F45;
+        }
+    }
+
+    .splide__pagination {
+        gap: 8px;
+
+        &__page {
+            border: 1px solid #BABFC4; 
+            background: #fff;
+            width: 10px;
+            height: 10px;
+            opacity: 1;
+            margin: 0;
+
+            &.is-active {
+                transform: scale(1);
+                background-color: #0860C4;
+                border-style: unset;
+            }
+        }
+
+        li {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}

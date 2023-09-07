@@ -1,0 +1,19 @@
+{% set slides = fields.opinion_slides %}
+
+<div id="{{ block_id }}" class="opinion-slider-block {{ block_classes }}">
+    {% if slides|length >= 3 %}
+        <div class="opinion-slider-block__track">
+            <div class="opinion-slider-block__list">
+                {% for slide in slides %}
+                    <div class="opinion-slider-block__slide">
+                        <div class="opinion-slider-block__slide-content">
+                            <p class="opinion-slider-block__slide-description"> {{ slide.slide_description }}</p>
+                            <p class="opinion-slider-block__slide-name">{{ slide.slide_names }}</p>
+                            <p class="opinion-slider-block__slide-postion">{{ slide.slide_position }}</p>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    {% endif %}
+</div>
