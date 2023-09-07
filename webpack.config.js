@@ -6,6 +6,7 @@ const BrowserSyncPlugin = require('browser-sync-webpack-plugin');
 const glob = require('glob');
 
 const blocksScssFiles = glob.sync('./includes/blocks/*/assets/styles.scss');
+const blocksJsFiles = glob.sync('./includes/blocks/*/assets/index.js');
 
 console.log(...blocksScssFiles);
 
@@ -51,6 +52,7 @@ module.exports = {
       './src/js/app.js',
       './src/scss/app.scss',
       ...blocksScssFiles.map((file) => `./${file}`),
+      ...blocksJsFiles.map((file) => `./${file}`),
     ],
   },
   output: {
