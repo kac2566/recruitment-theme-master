@@ -2,4 +2,10 @@
 @import "core/normalize";
 @import "core/reset";
 
-// Your code here
+// Everything that takes part in blocks like buttons
+
+@import "components/components";
+
+// Sass mechanisms that help define styles in other directories. Helpers that includes things like global variables, functions, and mixins
+
+@import "abstracts/abstracts";
