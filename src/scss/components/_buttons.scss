@@ -1,0 +1,22 @@
+%extend-style {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    padding: 8px 24px;
+    border-radius: 20px;
+}
+
+.secondary-button {
+    color: #ffffff;
+    background-color: #074D9D;
+    border: 1px solid #ffffff;
+
+    @extend %extend-style;
+}
+
+.primary-button {
+    color: #074D9D;
+    background-color: #ffffff;
+
+    @extend %extend-style;
+}
