@@ -1,0 +1,25 @@
+{% set boxes = fields.link_boxes %}
+
+<div id="{{ block_id }}" class="link-boxes-block {{ block_classes }}">
+    <div class="link-boxes-block__track">
+        <div class="link-boxes-block--grid-view">
+            {% for box in boxes %}
+                {% if (box.box_link) %}
+                    <a href="{{ box.box_link }}" target="{{ box.box_target }}" 
+                    {% if (box.box_text) %}
+                        aria-label="Przeczytaj więcej na temat {{ box.box_text }}">
+                    {% endif %}
+                    <div class="link-boxes-block__box">
+                        {% if (box.box_image) %}
+                            <img class="link-boxes-block__image" src="{{ box.box_image.url }}" alt="{{ box.box_image.alt }}" width="480" height="326">
+                        {% endif %}
+                        {% if (box.box_text) %}
+                            <p class="link-boxes-block__title">{{ box.box_text }}</p>
+                        {% endif %}
+                    </div>
+                    </a>
+                {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+</div>
