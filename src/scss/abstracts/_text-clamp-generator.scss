@@ -1,0 +1,13 @@
+$clamp: $max-clamp-lines;
+
+@while $clamp > 0 {
+  .text-clamp-#{$clamp} {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    -webkit-line-clamp: $clamp;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+  }
+
+  $clamp: $clamp - 1;
+}
