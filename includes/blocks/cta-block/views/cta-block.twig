@@ -1,0 +1,14 @@
+{% set bg_color = fields.cta_background_color %}
+{% set description = fields.cta_wysiwyg %}
+{% set buttons = fields.cta_buttons %}
+
+<div id="{{ block_id }}" class="cta-block {{ block_classes }}" style="background-color: {{bg_color}}">
+    <div class="cta-block__description">
+        {{ description|raw }}
+    </div>
+    <div class="cta-block__buttons-wrapper">
+        {% for button in buttons %}
+            <a class="cta-block__button" href="{{ button.cta_button_link }}" target="{{ button.cta_button_target }}">{{ button.cta_button_text }}</a>
+        {% endfor %}
+    </div>
+</div>

@@ -1,0 +1,52 @@
+@import '../../../../src/scss/components/buttons';
+@import '../../../../src/scss/abstracts/abstracts';
+
+.cta-block {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 72px 40px;
+
+    @include mobile-only {
+        padding: 40px 16px;
+    }
+
+    &__description {
+        text-align: center;
+
+        * {
+            color: #ffffff;
+        }
+
+        h2 {
+            font-size: 36px;
+            margin-bottom: 6px;
+            font-weight: 500;
+            text-shadow: 0px 4px 10px rgba(0, 96, 160, 0.13);
+        }
+
+        p {
+            font-size: 20px;
+            margin-bottom: unset;
+        }
+    }
+
+    &__buttons-wrapper {
+        margin-top: 24px;
+        display: flex;
+        gap: 18px;
+        flex-wrap: wrap;
+    }
+
+    &__button {
+        width: fit-content;
+        justify-content: center;
+
+        @extend .secondary-button;
+
+        &:nth-child(even) {
+            @extend .primary-button;
+        }
+    }
+}

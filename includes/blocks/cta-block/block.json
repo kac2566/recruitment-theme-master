@@ -1,0 +1,21 @@
+{
+  "name": "acf/cta-block",
+  "title": "CTA Block ACF",
+  "description": "A custom block.",
+  "category": "Custom Blocks ACF",
+  "icon": "format-aside",
+  "keywords": ["cta-block", "acf"],
+  "supports": {
+    "anchor": true,
+    "customClassName": true,
+    "align": ["wide", "full"],
+    "jsx": true,
+    "multiple": true
+  },
+  "apiVersion": 2,
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "cta-block.php"
+  },
+  "blockVersion": 2
+}
