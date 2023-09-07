@@ -18,4 +18,4 @@ if(isset($block['className'])) {
     $context['block_classes'] = $block_classes;
 }
 
-return render_block_template('', 'block-view.twig', $context);
+return render_block_template('', 'link-boxes.twig', $context);
