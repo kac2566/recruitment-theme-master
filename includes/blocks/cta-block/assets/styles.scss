@@ -29,6 +29,7 @@
         p {
             font-size: 20px;
             margin-bottom: unset;
+            font-family: 'Jost*', sans-serif;
         }
     }
 
@@ -37,11 +38,11 @@
         display: flex;
         gap: 18px;
         flex-wrap: wrap;
+        justify-content: center;
     }
 
     &__button {
         width: fit-content;
-        justify-content: center;
 
         @extend .secondary-button;
 

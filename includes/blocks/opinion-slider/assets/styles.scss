@@ -1,4 +1,8 @@
 .opinion-slider-block {
+    > * {
+        font-family: 'Jost*', sans-serif;
+    }
+
     &__slide {
         &-content {
             padding: 64px;
@@ -27,6 +31,9 @@
 
     .splide__pagination {
         gap: 8px;
+        position: relative;
+        padding: 8px 0;
+        bottom: 3em;
 
         &__page {
             border: 1px solid #BABFC4; 

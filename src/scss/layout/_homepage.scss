@@ -1,0 +1,31 @@
+.homepage__section-slider {
+    background-color: #FCFCFC;
+    padding: 64px 0;
+
+    .cta-block {
+        padding: 36px;
+        height: 100%;
+    }
+
+    .container {
+        padding: 0 16px;
+    }
+
+    .wp-block-heading  {
+        font-size: 32px;
+        font-weight: 400;
+        color: #232629;
+        margin-bottom: 24px;
+    }
+
+    @include not-desktop {
+        .wp-block-columns {
+            flex-direction: column-reverse;
+            flex-wrap: nowrap;
+        }
+
+        .wp-block-column {
+            max-width: 100%;
+        }
+    }
+}
