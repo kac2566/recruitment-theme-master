@@ -9,3 +9,9 @@
 // Sass mechanisms that help define styles in other directories. Helpers that includes things like global variables, functions, and mixins
 
 @import "abstracts/abstracts";
+
+// Base styles like global classes
+@import "base/base";
+
+// Layout styles like navigation, footer 
+@import "layout/layouts";
