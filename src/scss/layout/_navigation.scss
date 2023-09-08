@@ -25,6 +25,10 @@ header {
     align-items: center;
     padding: 24px 16px;
 
+    > * {
+        font-family: 'Jost*', sans-serif;
+    }
+
     &__logo {
         margin-right: 46px;
     }
