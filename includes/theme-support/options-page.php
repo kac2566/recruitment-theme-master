@@ -38,10 +38,58 @@ if (false === \function_exists('register_options_page_custom_fields')) {
                     ],
                     [
                         'key' => 'footer_content',
-                        'label' => 'Footer Content',
+                        'label' => 'Treść stropki',
                         'name' => 'footer_content',
+                        'type' => 'textarea',
+                    ],
+                    [
+                        'key' => 'footer_contact',
+                        'label' => 'Adress kontaktowy',
+                        'name' => 'footer_contact',
                         'type' => 'wysiwyg',
                     ],
+                    [
+                        'key' => 'footer_email',
+                        'label' => 'Adres e-mail',
+                        'name' => 'footer_email',
+                        'type' => 'email',
+                    ],
+                    [
+                        'key' => 'footer_phone',
+                        'label' => 'Numer telefonu',
+                        'name' => 'footer_phone',
+                        'type' => 'text',
+                    ],
+                    [
+                        'key' => 'footer_social_icons',
+                        'label' => 'Ikony społecznościowe',
+                        'name' => 'footer_social_icons',
+                        'type' => 'repeater',
+                        'instructions' => 'Dodaj ikonę społecznościową wraz z linkiem.',
+                        'min' => 0,
+                        'layout' => 'table',
+                        'button_label' => 'Dodaj ikonę społecznościową',
+                        'sub_fields' => [
+                            [
+                                'key' => 'icon',
+                                'label' => 'Ikona społecznościowa',
+                                'name' => 'icon',
+                                'type' => 'text',
+                            ],
+                            [
+                                'key' => 'link',
+                                'label' => 'Link',
+                                'name' => 'link',
+                                'type' => 'url',
+                            ],
+                        ],
+                    ],
+                    [
+                        'key' => 'footer_copyright',
+                        'label' => 'Treść copyright',
+                        'name' => 'footer_copyright',
+                        'type' => 'text',
+                    ]
                 ],
                 'location' => [
                     [

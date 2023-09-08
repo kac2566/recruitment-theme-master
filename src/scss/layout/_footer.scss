@@ -1,0 +1,119 @@
+.footer {
+    padding: 48px 16px;
+    background-color: #ffffff;
+
+    &__wrapper {
+        display: flex;
+        gap: 48px;
+
+        @include not-desktop {
+            flex-direction: column;
+            gap: 32px;
+        }
+    }
+
+    &__content {
+        max-width: 415px;
+
+        p {
+            margin-bottom: unset;
+            font-weight: 400;
+            line-height: 24px;
+            font-size: 16px;
+            color: #3B3F45;
+        }
+    }
+
+    &__logo {
+        margin-bottom: 26px;
+    }
+
+    &__quick-links {
+        &-title {
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 26px;
+            color: #232629;
+            margin-bottom: 12px;
+        }
+    }
+
+    &__menu {
+        margin: unset;
+        list-style: none;
+        padding: unset;
+        gap: 12px;
+        display: flex;
+        flex-direction: column;
+
+        li {
+            color: #0860C4;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+        }
+    }
+
+    &__contact {
+        margin-left: auto;
+
+        @include not-desktop {
+            margin-left: unset;
+        }
+        
+        &-title {
+            color: #232629;
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 26px;
+            margin-bottom: 16px;
+        }
+
+        &-info {
+            color: #3B3F45;
+            font-size: 16px;
+            line-height: 24px;
+            font-weight: 400;
+        }
+
+        &-buttons {
+            padding-top: 28px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+
+            a {
+                display: flex;
+                align-items: center;
+                gap: 8px;
+
+                @extend .nav-button;
+            }
+        }
+    }
+
+    &__social-links {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 24px 0;
+        gap: 12px;
+    }
+
+    &__social-link {
+        display: flex;
+        align-items: center;
+    }
+
+    &__copyright {
+        display: flex;
+        justify-content: center;
+
+        p {
+            color: #232629;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+        }
+    }
+}
