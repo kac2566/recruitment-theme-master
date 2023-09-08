@@ -4,3 +4,4 @@ function load_css_js() {
     wp_enqueue_script('main-scripts', get_template_directory_uri() . '/dist/script.js', array('jquery'), null, true);
 }
 add_action('wp_enqueue_scripts', 'load_css_js', 100);
+add_action('admin_enqueue_scripts', 'load_css_js');
